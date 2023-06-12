@@ -3,7 +3,8 @@ import {user} from "../stores";
 import type {Category, Placemark, User} from "./placemark-types";
 
 export const placemarkService = {
-    baseUrl: "http://localhost:4000",
+    // baseUrl: "http://localhost:4000",
+    baseUrl: "https://placemark-hapi-kc59.onrender.com",
 
     async signup(firstName: string, lastName: string, email: string, password: string): Promise<boolean> {
         try {
